@@ -89,11 +89,11 @@ To launch Wifitap with basic options, use the following command:
 
 	./wifitap.py -b <bssid>
 
-This will create a wj0 interface. Next, you'll need to configure this new interface using the following shown below. Note that you can optionally specify the MAC in the following command.
+This will create a wj0 interface. Next, you'll need to configure this new interface using syntax shown below. Note that you can optionally specify the MAC in the following command.
 
 	ifconfig wj0 [hw ether <MAC>] 192.168.1.1 [mtu <MTU>]
 
-You'll now be able to use your newly created wj0 interface as if it were normal network interface, according to your system routing tabl, according to your system routing table. :)
+You'll now be able to use your newly created wj0 interface as if it were normal network interface, according to your system routing table. :)
 
 
 Wifitap Command Line Arguments
