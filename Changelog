@@ -44,3 +44,16 @@
 
 0.4.1 - Updated to use modern scapy and work with Linux radiotap headers
 	Oliver Lavery, Gotham Digital Science (olavery@gdssecurity.com)
+
+0.4.2 - Gabriel Ryan, Gotham Digital Science (gryan@gdssecurity.com), March 28th 2017
+	Fixed indentation caused by mixing tabs and spaces. Project now uses spaces only.
+	Fixed import statements to work with modern versions of Scapy.
+	Removed unused imports.
+	Psyco is no longer maintained and does not support Python 2.7. Removed from project in favor of PyPy.
+	Code cleanup and optimizations.
+	Project now uses the newer argparse module instead of getopt to parse command line arguments.
+	Input validation is now done through argparse as much as possible.
+	Added utils.py file containing commonly used utility functions.
+	Added include guard to all files.
+	Added pip requirements file.
+	Updated README.
