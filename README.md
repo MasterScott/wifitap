@@ -68,25 +68,10 @@ Python dependencies are enumerated in `pip.req`, can be installed using the pip 
 
 	pip install -r pip.req
 
-Wifitap's most important dependency is Scapy, which you should check out because it's totally awesome:
+Wifitap's most important dependency is Scapy, which you should check out because it's totally awesome.
 
  - [http://www.secdev.org/projects/scapy/](http://www.secdev.org/projects/scapy/)
 
-
-
-o Preparing WiFi adapter
-
-	Download, patch and install driver (see PATCHING).
-	
-	Supposing channel is 11:
-
-		~# iwconfig $IFACE mode monitor channel 11
-		~# ifconfig $IFACE up promisc
-
-	NB: Atheros driver Madwifi requires specific configuration to get driver
-	    in promisc mode and/or activate traffic injection. See website
-	    (http://www.madwifi.org/) for details if you use madwifi-ng or
-	    madwifi-old.
 
 Usage Guide
 ===========
