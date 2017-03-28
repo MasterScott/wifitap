@@ -81,17 +81,17 @@ Launching Wifitap
 
 Before you start, make sure your wireless interface is in monitor mode. In the commands shown below, substitute "wlan0" for the name of your wireless interface.
 	
-	~# ifconfig wlan0 down
-	~# iw dev wlan0 set monitor none
-	~# ifconfig wlan0 up promisc
+	ifconfig wlan0 down
+	iw dev wlan0 set monitor none
+	ifconfig wlan0 up promisc
 
 To launch Wifitap with basic options, use the following command:
 
-	~# ./wifitap.py -b <bssid>
+	./wifitap.py -b <bssid>
 
 This will create a wj0 interface. Next, you'll need to configure this new interface using the following shown below. Note that you can optionally specify the MAC in the following command.
 
-	~# ifconfig wj0 [hw ether <MAC>] 192.168.1.1 [mtu <MTU>]
+	ifconfig wj0 [hw ether <MAC>] 192.168.1.1 [mtu <MTU>]
 
 You'll now be able to use your newly created wj0 interface as if it were normal network interface, according to your system routing tabl, according to your system routing table. :)
 
